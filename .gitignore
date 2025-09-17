@@ -1,0 +1,7 @@
+instance
+requirements.txt
+readme.md
+images
+__pycache__
+app.cpython-313.pyc
+model.cpython-313.pyc

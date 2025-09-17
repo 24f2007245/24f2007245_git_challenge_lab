@@ -1,0 +1,8 @@
+*{
+    margin: 0;
+}
+.content {
+    background-color: cadetblue;
+    color: white;
+    padding: 20px;
+}
