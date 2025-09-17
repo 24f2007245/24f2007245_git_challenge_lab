@@ -1,12 +1,15 @@
 from flask import Flask, render_template
+from model import db
 
 app=Flask(__name__)
 
-from model import *
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///project.db'
+db.init_app(app)
 
-@app.route('/')
-def index():
-    return render_template('index.html')
+with app.app_context():
+    db.create_all()
 
+from routes import *
 
-app.run(debug=True)
+if __name__=='__main__':
+    app.run(debug=True)
