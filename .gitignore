@@ -2,3 +2,4 @@ instance
 requirements.txt
 readme.md
 images
+__pycache__
