@@ -4,14 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login</title>
+    <link rel="stylesheet" href="{{url_for('static' , filename='style.css')}}">
+
 </head>
 <body>
+    <div class="nav">
+        <h3>Namaste </h3>
+    </div>
     <div class="page">
-        <div class="cont">
-            <h3>login</h3>
-            <input type="text" placeholder="Enter your email or user id">
+        <div class="content">
+            <h3>login</h3><br>
+            <form action="/login">
+            <input type="text" placeholder="Enter your email or user id"><br>
             <input type="password" placeholder="Enter your password">
+            <button type="submit">submit</button><br><br>
+            <p>if you dont have credentials enter new one, it will automatically save and then you can login.</p>
+            </form>
         </div>
+        <a href="/">go back</a>
     </div>
 </body>
 </html>

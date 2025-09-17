@@ -1,8 +1,31 @@
 *{
     margin: 0;
+    padding: 0;
 }
-.content {
+.nav {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: cadetblue;
     color: white;
-    padding: 20px;
+    padding: 15px;
+}
+.content{
+    padding: 10px;
+}
+input{
+    padding: 5px;
+}
+button {
+    border: 1px solid cadetblue;
+    padding: 5px;
+    color: cadetblue;
+    background-color: white;
+}
+
+button:hover{
+    border: none;
+    background-color: cadetblue;
+    color: white;
+}
+a:hover{
+    color: cadetblue;
 }
